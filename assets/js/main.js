@@ -15,17 +15,17 @@ for (let i = 1; i <= 100; i++) {
     // 2. individuare i multipli di 3
     // 2.1 assegnare valore "Fizz" a i multipla di 3
     let multiplo3 = (i % 3 == 0);
-    multiplo3 = 'Fizz'
+    multiplo3 = 'Fizz';
     //console.log('il numero è multiplo di 3:', multiplo3);
     // 3. individuare i multipli di 5
     // 3.1 assegnare valore "Buzz" a i multipla di 5
     let multiplo5 = (i % 5 == 0);
-    multiplo5 = 'Buzz'
+    multiplo5 = 'Buzz';
     //console.log('il numero è multiplo di 5:', multiplo5);
     // 4. pindividuare i multipli di 3 e 5
     // 4.1 assegnare valore "FizzBuzz" a i multipla sia di 3 sia di 5
-    let multiplo3e5 = (i % 3 == 0 && i % 5 == 0);
-    multiplo3e5 = 'FizzBuz'
+    let multiplo3e5 = ((i % 3 == 0) && (i % 5 == 0));
+    multiplo3e5 = 'FizzBuz';
     //console.log('il numero è multiplo sia di 3 sia di 5:', multiplo3e5);
     
     // 4. far apparire la stringa "Fizz" al posto dei multipli di 3 
@@ -35,7 +35,7 @@ for (let i = 1; i <= 100; i++) {
     } else if (i % 5 == 0){
         console.log(multiplo5);
         // 6. far apparire la stringa "FizzBuzz" al posto dei multipli sia di 3 sia di 5
-    } else if (i % 3 == 0 && i % 5 == 0) {
+    } else if ((i % 3 == 0) && (i % 5 == 0)){
         console.log(multiplo3e5);
         // 7. far apparire il numero se non è multiplo di niente
     } else{
