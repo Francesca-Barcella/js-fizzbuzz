@@ -55,6 +55,3 @@ const titleDom = document.createElement('h1');
 titleDom.append('FizzBuzzDOM');
 //bonus 1.4 - appendo il mio elemento al dom
 containerEL.append(titleDom);
-
-
-
