@@ -9,8 +9,20 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 //come capire se un numero (tra 1 e 100) è multiplo di 3 ?
 //un numero è multiplo di 3/5 se questo da 0 come resto dopo essere stato diviso per 3/5.
 
+
+const containerEL = document.querySelector('.container');
+
+const titleDom = document.createElement('h1');
+// bonus 1.3 - appendo il contenuto all'elemento creato
+titleDom.innerHTML = 'FizzBuzzDOM';
+//bonus 1.4 - appendo il mio elemento al dom
+containerEL.append(titleDom);
+
 // 1. stampare in console i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
+    const mySquare = document.createElement('div');
+    mySquare.innerHTML = i;
+    containerEL.append(mySquare);
     //console.log(i);
     // 2. individuare i multipli di 3
     // 2.1 assegnare valore "Fizz" a i multipla di 3
@@ -45,13 +57,4 @@ BONUS 1:
 Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
-  */
-
-// bonu 1.1 - seleziono un elemento del dom
-const containerEL = document.querySelector('.container');
-// bonus 1.2 - creo riquadro per i risultati con la funzione append
-const titleDom = document.createElement('h1');
-// bonus 1.3 - appendo il contenuto all'elemento creato
-titleDom.append('FizzBuzzDOM');
-//bonus 1.4 - appendo il mio elemento al dom
-containerEL.append(titleDom);
+*/
