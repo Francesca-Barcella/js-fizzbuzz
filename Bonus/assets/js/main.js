@@ -22,6 +22,11 @@ for (let i = 1; i <= 100; i++) {
     console.log(mySquare);
     mySquare.style.padding = '0.5rem';
     mySquare.style.textAlign = 'center';
+    mySquare.style.width = '3.5rem';
+    mySquare.style.height = '3.5rem';
+    mySquare.style.fontSize = '0.75rem'
+    mySquare.style.margin = '0.5rem';
+    mySquare.style.lineHeight = '2.5rem';
 
     //console.log(i);
     // 2. individuare i multipli di 3
