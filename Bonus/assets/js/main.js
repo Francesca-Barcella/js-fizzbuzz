@@ -19,6 +19,10 @@ const containerEL = document.querySelector('.container');
 for (let i = 1; i <= 100; i++) {
     const mySquare = document.createElement('div');
     containerEL.append(mySquare);
+    console.log(mySquare);
+    mySquare.style.padding = '0.5rem';
+    mySquare.style.textAlign = 'center';
+
     //console.log(i);
     // 2. individuare i multipli di 3
     // 2.1 assegnare valore "Fizz" a i multipla di 3
@@ -37,19 +41,22 @@ for (let i = 1; i <= 100; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
         console.log(multiplo3e5);
         mySquare.innerHTML = (multiplo3e5);
+        mySquare.style.backgroundColor = 'violet';
         // 5. far apparire la stringa "Buzz" al posto dei multipli di 5
     } else if (i % 5 == 0) {
         console.log(multiplo5);
         mySquare.innerHTML = (multiplo5);
+        mySquare.style.backgroundColor = 'yellow';
         // 6. far apparire la stringa "FizzBuzz" al posto dei multipli sia di 3 sia di 5
     } else if (i % 3 == 0) {
         console.log(multiplo3);
         mySquare.innerHTML = (multiplo3);
+        mySquare.style.backgroundColor = 'lightgreen';
         // 7. far apparire il numero se non è multiplo di niente
     } else {
         console.log(i);
         mySquare.innerHTML = (i);
-
+        mySquare.style.backgroundColor = 'lightblue';
     }
 }
 
