@@ -1,3 +1,13 @@
-.container{
+.container {
     background-color: lightpink;
+    max-width: 1200px;
+    gap: 1rem;
+}
+
+.square {
+    width: calc(100% / 10 - 1rem);
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

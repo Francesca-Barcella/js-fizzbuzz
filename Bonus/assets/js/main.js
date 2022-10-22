@@ -25,16 +25,10 @@ for (let i = 1; i <= 100; i++) {
     const multiplo3e5 = 'FizzBuz';
 
     const mySquare = document.createElement('div');
-    containerEL.append(mySquare);
+    mySquare.classList.add('square');
     console.log(mySquare);
-    mySquare.style.padding = '0.5rem';
-    mySquare.style.textAlign = 'center';
-    mySquare.style.width = '3.5rem';
-    mySquare.style.height = '3.5rem';
-    mySquare.style.fontSize = '0.75rem'
-    mySquare.style.margin = '0.5rem';
-    mySquare.style.lineHeight = '2.5rem';
-
+    containerEL.append(mySquare);
+    
     if (i % 3 == 0 && i % 5 == 0) {
         console.log(multiplo3e5);
         mySquare.innerHTML = (multiplo3e5);
